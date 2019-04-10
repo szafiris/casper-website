@@ -7,14 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
-  <title>Casper</title>
+  <!-- TODO: fix favicon -->
+  <link rel="icon" href="images/black-transparent-casper-32x32.png" type="image/png" sizes="32x32" />
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -23,7 +23,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/freelancer.min.css" rel="stylesheet">
-
+  <title>Casper</title>
 </head>
 
 <body id="page-top">
@@ -55,7 +55,7 @@
   <!-- Header -->
   <header class="masthead bg-primary text-white text-center">
     <div class="container">
-      <img class="img-fluid mb-5 d-block mx-auto" src="img/casper_logo.png" alt="">
+      <img class="img-fluid mb-5 d-block mx-auto" src="images/circle-casper.png" alt="">
       <h1 class="text-uppercase mb-0">Casper</h1>
       <hr class="star-light">
       <h2 class="font-weight-light mb-0">The Friendly Programming Language</h2>
@@ -92,7 +92,7 @@
       <hr class="star-light mb-5">
       <div class="row">
         <div class="col-md-6 col-lg-4">
-         <pre><code class = "text-white">
+         <pre><code class="text-white">
             boo evenOrOdd(num x):
             if (x % 2 equals 0):
                 return true
@@ -102,15 +102,12 @@
         </div>
         <div class="col-md-6 col-lg-4">
           <pre><code class = "text-white">
-              num gcd(num x, num y):
-              while(y):
-                  x = y
-                  y = x % y
-              return x
+            num doTwice(num f:(num z),num x):
+              return f(f(x))
           </code></pre>
         </div>
         <div class="col-md-6 col-lg-4">
-          <pre><code class = "text-white">
+          <pre><code class="text-white">
               num areaOfCircle(num r):
                 num pi = 3.14159265
                 num area = pi * r * r
@@ -122,6 +119,7 @@
   </section>
 
   <!-- About Developers Section -->
+  <!-- TODO ADD PHOTOS, BIOS, AND LINKS -->
   <section class="bg-secondary text-primary mb-0" id="developers">
     <div class="container">
       <h2 class="text-center text-uppercase text-primary">The Developers</h2>
@@ -142,7 +140,7 @@
                   <i class="text-center text-white fa-3x">Teddy Chu</i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+              <img class="img-fluid" src="images/portfolio/cabin.png" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -152,17 +150,17 @@
                     <i class="text-center text-white fa-3x">Ian Lizarda</i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+              <img class="img-fluid" src="images/portfolio/cake.png" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                    <i class="text-center text-white fa-3x">Donovon Moini</i>
+                    <i class="text-center text-white fa-3x">Donovan Moini</i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+              <img class="img-fluid" src="images/portfolio/circus.png" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -172,7 +170,7 @@
                     <i class="text-center text-white fa-3x">Alexia Filler</i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/game.png" alt="">
+              <img class="img-fluid" src="images/portfolio/game.png" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -182,16 +180,16 @@
                   <i class="text-white fa-3x">Serena Zafiris</i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/test.jpg" alt="">
+              <img class="img-fluid" src="images/portfolio/test.jpg" alt="">
             </a>
           </div>
         </div>
     </div>
   </section>
 
-  <!-- Portfolio Modals -->
+  <!-- Developer Modals -->
 
-  <!-- Portfolio Modal 1 -->
+  <!-- Developer Modal 1 -->
   <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
       <div class="portfolio-modal-dialog bg-white">
         <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
@@ -202,7 +200,7 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0">Teddy Chu</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt="">
+              <img class="img-fluid mb-5" src="images/portfolio/cabin.png" alt="">
               <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
@@ -213,7 +211,7 @@
       </div>
     </div>
   
-    <!-- Portfolio Modal 2 -->
+    <!-- Developer Modal 2 -->
     <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
       <div class="portfolio-modal-dialog bg-white">
         <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
@@ -224,7 +222,7 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0">Ian Lizarda</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
+              <img class="img-fluid mb-5" src="images/portfolio/cake.png" alt="">
               <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
@@ -235,7 +233,7 @@
       </div>
     </div>
   
-    <!-- Portfolio Modal 3 -->
+    <!-- Developer Modal 3 -->
     <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
       <div class="portfolio-modal-dialog bg-white">
         <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
@@ -246,7 +244,7 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0">Donovan Moini</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
+              <img class="img-fluid mb-5" src="images/portfolio/circus.png" alt="">
               <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
@@ -257,7 +255,7 @@
       </div>
     </div>
   
-    <!-- Portfolio Modal 4 -->
+    <!-- Developer Modal 4 -->
     <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
       <div class="portfolio-modal-dialog bg-white">
         <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
@@ -268,7 +266,7 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0">Alexia Filler</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
+              <img class="img-fluid mb-5" src="images/portfolio/game.png" alt="">
               <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
@@ -279,7 +277,7 @@
       </div>
     </div>
   
-    <!-- Portfolio Modal 5 -->
+    <!-- Developer Modal 5 -->
     <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
       <div class="portfolio-modal-dialog bg-white">
         <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
@@ -290,7 +288,7 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0">Serena Zafiris</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/test.jpg" alt="">
+              <img class="img-fluid mb-5" src="images/portfolio/test.jpg" alt="">
               <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
@@ -409,14 +407,20 @@
   </div>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- TODO: delete jquery file -->
+  <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <!-- TODO: delete bootstrap.bundle.min.js files -->
+  <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
   <!-- Contact Form JavaScript -->
+  <!-- TODO: probably delete since we dont need these? I dont think we do, I have a contact section but i dont think its
+  necessary -->
   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/contact_me.js"></script>
 
