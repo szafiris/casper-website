@@ -85,50 +85,104 @@
     </div>
   </section>
 
-
-  <!-- TODO: update code examples -->
   <!-- Code Examples Section -->
   <section class="portfolio" id="codeExamples">
     <div class="container">
       <h2 class="text-center text-uppercase text-white mb-0">Code Examples</h2>
       <hr class="star-light mb-5">
       <div class="row">
-        <div class="col-md-6 col-lg-4">
-         <pre><code class="text-white">
+        <div class="col-sm-12 col-lg-6">
+          <h3 class="text-center text-uppercase text-white">Even or Odd</h3>
+          <div class="row">
+            <div class="offset-sm-3 col-sm-6 col-lg-8 offset-lg-4">
+                <pre><code class="text-white">
 boo evenOrOdd(num x):
     return x % 2 == 0
-          </code></pre>
+                </code></pre>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <pre><code class = "text-white">
+        <div class="col-sm-12 col-lg-6">
+          <h3 class="text-center text-uppercase text-white">Do Twice</h3>
+          <div class="row">
+            <div class="offset-sm-3 col-sm-8 col-lg-8 offset-lg-4">
+                <pre><code class="text-white">
 num doTwice(num f:(num z), num x):
     return f(f(x))
-          </code></pre>
+                </code></pre>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <pre><code class="text-white">
-num areaOfCircle(num r):
-    return pi() * r * r
-          </code></pre>
+      </div>
+      <div class="row">
+          <div class="col-sm-12 col-lg-6">
+            <h3 class="text-center text-uppercase text-white">Greatest Common Divisor</h3>
+            <div class="row">
+              <div class="offset-sm-3 col-sm-6 col-lg-8 offset-lg-4">
+                  <pre><code class="text-white">
+num gcd(num x, num y):
+    num a = abs(x)
+    num b = abs(y)
+    while(b > 0):
+        num t = b
+        b = a % b
+        a = t
+    return a
+                  </code></pre>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <h3 class="text-center text-uppercase text-white">Fibonacci</h3>
+            <div class="row">
+              <div class="offset-sm-4 col-sm-8 offset-lg-4 col-lg-8">
+                  <pre><code class="text-white">
+num fib(num x):
+    if (x <= 1):
+        return x
+    return fib(x - 1) + fib(x - 2)
+                  </code></pre>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <pre><code class="text-white">
- boo evenOrOdd(num x):
- if (x % 2 equals 0):
-     return true
- else:
-     return false
-           </code></pre>
-         </div>
-         <div class="col-md-6 col-lg-4">
-          <pre><code class="text-white">
- boo evenOrOdd(num x):
- if (x % 2 equals 0):
-     return true
- else:
-     return false
-           </code></pre>
-         </div>
+        <div class="row">
+          <div class="col-sm-12 col-lg-6">
+            <h3 class="text-center text-uppercase text-white">First Factorial</h3>
+            <div class="row">
+              <div class="offset-sm-3 col-sm-6 col-lg-9 offset-lg-3">
+                <pre><code class="text-white">
+num firstFactorial(num x):
+    if (x == 0 or x == 1):
+        return 1
+    else:
+        return x * firstFactorial(x - 1)
+                </code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <h3 class="text-center text-uppercase text-white">Two Sum</h3>
+          <div class="row">
+            <div class="offset-sm-4 col-sm-8 offset-lg-2 col-lg-10">
+              <pre><code class="text-white">
+list&lt;num&gt; twoSum(list<num> nums, num target):
+    if len(nums) == 2:
+        return [0, 1]
+    list&lt;num&gt; ans = []
+    dict&lt;num, num&gt; hashTable = {}
+    for i from 0 to len(hashTable):
+        num complement = target - nums[i]
+        num find = hashTable[complement]
+        if hashTable.getValue(complement) != none:
+            ans = [find, i]
+            break
+        hashTable[nums[i]] = i
+    return ans
+              </code></pre>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
